@@ -1,11 +1,11 @@
 # Site settings
 author: Alethea Cary
-title: 
+title: My First Flatiron Project
 header-img: img/home-bg.png
 email: aletheacary@gmail.com
 copyright_name: Alethea Cary
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Exploring a Basic User-Interface and Stocks
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  TrueC-D
