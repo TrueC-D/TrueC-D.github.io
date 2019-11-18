@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Event Space - More complex than you'd think"
+title:      "Event Space - more complex than you'd think"
 date:       2019-11-18 17:35:41 -0500
 permalink:  event_space_-_more_complex_than_youd_think
 ---
