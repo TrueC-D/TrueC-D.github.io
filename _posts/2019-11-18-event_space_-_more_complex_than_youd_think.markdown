@@ -12,15 +12,15 @@ I created and app that allows you to create and attend events which required a m
 
 My solution was to still use activerecord partially but to create my own instance method for the user has many through method.  I created the "events_attending" has many through method by calling on the "EventAttendee" join table.
 
-    ```
-		def events_attending
+    ```def events_attending
 		
 		  EventAttendee.all.select{|item| item.user == self}.collect{|item| item.event}
 		end```
 		
 Another dilemna was how to create  a way for a user to choose to attend and choose to revoke their attendance for an event .  The attendance was easy, as I just had to create a new instance in the EventAttendee table that had both the user and the event ids, but revoking attendance proving to be more difficult as I couldn't just write current_user.events.find_by(event_id: params[:id]).delete as that would call upon the events my user created not the events my user was attending, also my events_attending method was only an array of collected instances and would not delete an instance from a table.  Additionally when I had input current_user.event_attendees.find_by(event_id: params[:id]).delete, it seemed to have an error.  I found a solution similar to this though, by adding an extra line the error was removed.
 
-``` event = current_user.event_attendees.find_by(event_id: params[:id])
+``` 
+event = current_user.event_attendees.find_by(event_id: params[:id])
         current_user.event_attendees.delete(event) if event```
 
 After these two problems were solved, it was smooth sailing from there. 
