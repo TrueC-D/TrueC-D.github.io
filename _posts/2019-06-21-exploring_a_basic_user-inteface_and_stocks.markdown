@@ -22,7 +22,7 @@ The different components necessary to complete the user interface were
 
 **Creating a User**
 
-For the gem I created, when the user first runs the gem they have the option to look at general information or look to buy/sell/view personal stocks.  If they select the latter they are greeted with a message that says "You will need to be logged in to access the requested information", then the log in menu method is called.
+For the gem I created, when the user first runs the gem they have the option to look at general information or look to buy/sell/view personal stocks.  If they select the latter they are greeted with a message that says "You will need to be logged in to access the requested information".  Afterwards the log in menu method is called.
 
 The log in menu method looks like this:
 
