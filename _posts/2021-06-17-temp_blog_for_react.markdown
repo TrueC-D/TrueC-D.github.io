@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Temp Blog For React"
-date:       2021-06-17 20:36:13 +0000
+date:       2021-06-17 16:36:13 -0400
 permalink:  temp_blog_for_react
 ---
 
