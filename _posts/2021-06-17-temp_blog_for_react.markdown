@@ -160,7 +160,7 @@ you need create nested brackets like so:
 
 ```
 const{
-categories: {icon: {previx, suffix}}
+categories: {icon: {previx, suffix},}
 }=venue
 
 
@@ -170,11 +170,7 @@ and if that value is undefined (as was happening in my response as icon was with
 
 ```
 
-const{
-
-categories: {icon: {prefix, suffix} } = {icon: 'undefined'}
-
-}
+categories: {icon: {prefix, suffix},} = {icon: 'no icon'}
 
 ```
 
