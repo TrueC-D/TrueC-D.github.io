@@ -57,9 +57,11 @@ const NavBar = (props) => {
 export default NavBar 
 ```
 
-The NavBar component contains <NavLinks/> which differ from  React Router's <Link/> s because you are able to add different features such as css for a logo link to apear differently than other links.   I used a rather simplistic style in my own code  but i created a dynamic nav links so the user can dynamically navigate to any location they created anywhere. 
+The NavBar component contains <NavLinks/> which very conveniently keep track of whether the route to the NavLink is active.  This is handy because it allows you to write code in css to highlight the link that you  are currently using (so the user knows where they are on the the website). I found it best to use ```  exact to="url" ``` because the base URL in nested routes will be considered active as well without the "exact" added. 
 
-I had an error in the NavBar that made it so i had a hard time rendering the locationLinks. The error was:
+I used rather simplistic code, but this included using NavLink's active class and I created dynamic nav links so the user can easily navigate to any location they created in the app. 
+
+With the dynamic links I had an error in the NavBar that made it so these particular links weren't rendering. The error was:
 
 ```
 VM231:1 Uncaught (in promise) SyntaxError: Unexpected token < in JSON at position 0
